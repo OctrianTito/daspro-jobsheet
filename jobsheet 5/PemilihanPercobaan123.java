@@ -6,7 +6,10 @@ public class PemilihanPercobaan123 {
         System.out.print("Masukkan angka : ");
         int angka = input23.nextInt();
 
-       String hasil = (angka % 2 == 0) ? "genap" : "ganjil";
-       System.out.print("angka " + angka + " bilangan " + hasil);
+       if (angka % 2 == 0) {
+        System.out.print("Angka " + angka + " bilangan genap");
+       } else {
+        System.out.print("Angka " + angka + " bilangan ganjil");
+       }
     }
 }
