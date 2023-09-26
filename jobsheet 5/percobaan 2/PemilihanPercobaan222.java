@@ -12,8 +12,22 @@ public class PemilihanPercobaan222 {
         float tugas = input22.nextFloat();
 
         float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
-        String messages = total < 65 ? "Remidi" : "Tidak Remidi";
-
-        System.out.println("Nilai akhir = " + total + " sehingga " + messages);
+        System.out.println("Nilai total anda adalah : " + total);
+        
+       if (total > 80) {
+        System.out.print("Nilai anda A");
+       } else if (total <= 80) {
+        System.out.print("Nilai anda B+");
+       } else if (total <= 73) {
+        System.out.print("Nilai anda B");
+       } else if (total <= 65) {
+        System.out.print("Nilai anda C+");
+       } else if (total <= 60) {
+        System.out.print("Nilai anda C");
+       } else if (total <= 50) {
+        System.out.print("Nilai anda D");
+       } else if (total <= 39) {
+        System.out.print("Nilai anda E");
+       }
     }
 }
