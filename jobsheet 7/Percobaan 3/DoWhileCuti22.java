@@ -23,6 +23,8 @@ public class DoWhileCuti22 {
                 } else {
                     System.out.println("Jumlah hari cuti yang diminta terlalu banyak. Sisa jatah cuti anda: " + jatahCuti);
                 }
+            } else if (konfirmasi.equalsIgnoreCase("t")) {
+                break;
             }
         } while (jatahCuti > 0);
     }
