@@ -40,11 +40,14 @@ public class BioskopWithScanner22 {
                 case 2: {
                     System.out.println("Daftar Penonton");
                     for (int i = 0; i < penonton.length; i++) {
-                        for (int j = 0; j < penonton[i].length; j++) {
-                            if (penonton[i][j] == null) {
-                                penonton[i][j] = "***";
+                            if (penonton[i][0] == null) {
+                                penonton[i][0] = "***";
+                            } else if (penonton[i][1] == null) {
+                                penonton[i][1] = "***";
+                            } else if (penonton[i][2] == null) {
+                                penonton[i][2] = "***";
+        
                             }
-                    }
                     System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(", ", penonton[i]));
                     }
                 }
